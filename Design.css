@@ -4,17 +4,6 @@ h1 {
     margin: 50px 0; /* Adjust margin as needed */
 }
 
-/* Split Screen for H3 Elements */
-h3 {
-    display: inline-block;
-    width: 48%; /* Adjust the width to create the desired split */
+div {
     text-align: center;
-    border: 1px solid #ccc; /* Add border or styles as needed */
-    padding: 20px; /* Adjust padding as needed */
-    box-sizing: border-box;
-}
-
-/* Clear any residual whitespace */
-p {
-    margin: 0;
 }
