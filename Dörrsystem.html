@@ -2,7 +2,9 @@
 
 <html lang="en">
 <head>
+     <!-- Här hittar vi olika länkar jag anänvder för styling, vi hittar olika meta kodar som används för; typ av kodning, att webbsidan kan ändra width&hight utan att det ändras mycket  -->
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" meta/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="Design.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -10,41 +12,45 @@
 </head>
 
 <body>
-
+ <!-- Titel -->
 <h1>AUTOMATISK DÖRRSYSTEM</h1>
 
 <header>
+<!-- lägger till olika länkar på navigations fält samt ikon till dropdown menu  -->
     <div class="navbar"> 
             <ul class="links">
-                <li><a href="Hem">Produkt</a></li>
+                <li><a href="Hem">Hem</a></li>
                 <li><a href="Produkt">Produkt</a></li>
                 <li><a href="Om Oss">Om Oss</a></li>
                 <li><a href="Kontakter">Kontakter</a></li>
             </ul>
-        <div class="toogle_btn">
+        <div class="toggle_btn">
             <i class="fa-solid fa-bars"></i>
         </div>
     </div>
 
+ <!-- Lägger till dropdown menu -->
     <div class="dropdown_menu">
         <li><a href="Hem">Produkt</a></li>
         <li><a href="Produkt">Produkt</a></li>
         <li><a href="Om Oss">Om Oss</a></li>
         <li><a href="Kontakter">Kontakter</a></li>
     </div>
-    
+ 
 </header>
 
+
 <script>
-    const toogleBtn = document.querySelector('.toggle_btn')
-    const toogleBtnIcon = document.querySelector('.toggle_btn i')
+// Har är funktion till dropdown menu. Så när jag trycker på tre streck den byts till "X" och om skärmen är liten den kan släppa ut allt det man såg på navigations fällt.  
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
     const dropDownMenu = document.querySelector('.dropdown_menu')
 
-    toogleBtn.oncick = function () {
+    toggleBtn.onclick = function () {
         dropDownMenu.classList.toggle('open')
         const isOpen = dropDownMenu.classList.contains('open')
 
-        toogleBtnIcon.classList = isOpen
+        toggleBtnIcon.classList = isOpen
         ? 'fa-solid fa-xmark'
         : 'fa-solid fa-bars'
     }
