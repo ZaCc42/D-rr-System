@@ -14,7 +14,9 @@ h1 {
 
 /* Ändringar hela body */
 body {
+
     height: 100vh;
+    margin: 0;
     background-color: #a5a2a2;
 }
 
@@ -46,6 +48,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .navbar .links{
@@ -53,13 +56,18 @@ header {
     gap: 2rem;
 }
 
+.navbar .toggle_btn{
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
 /* Dropdown menu som kopplas till naviagtions fält */
 .dropdown_menu {
     display: none;
     position: absolute;
     right: 2rem;
-    top: 60px;
-    height: 0;
+    height: 0px;
     width: 300px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(15px);
@@ -70,7 +78,7 @@ header {
 
 .dropdown_menu.open{
     height: 180px;
-
+    z-index: 1;
 }
 
 .dropdown_menu li{
@@ -100,4 +108,54 @@ header {
         left: 2rem;
         width: unset;
     }
+}
+
+.first {
+    display: block;
+    align-items: center;
+
+}
+
+/* Har kommer design för de fyra olika boxar */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    position: relative;
+    box-sizing: border-box;
+    width: 50%;
+    margin: 50px;
+    margin-bottom: 100px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+    transform: scale(1.02);
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    align-items: right;
+}
+
+.content {
+    padding: 2%;
 }
