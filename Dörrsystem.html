@@ -14,87 +14,55 @@
 </head>
 
 <body>
- <!-- Titel -->
-<h1>AUTOMATISK DÖRRSYSTEM</h1>
+    <header>
 
-<header>
-<!-- lägger till olika länkar på navigations fält samt ikon till dropdown menu  -->
-    <div class="navbar"> 
+        <!-- Titel -->
+        <h1>
+            <img class="title" src="../D-rr-System/img/AUTOMATISKA_DÖRR-removebg-preview.png" alt="Image 1">
+        </h1>
+
+        <!-- SJälva navigerings fält med kappen att öpna den och olika länkar  -->
+        <div class="navbar"> 
             <ul class="links">
                 <li><a href="Hem">Hem</a></li>
                 <li><a href="Produkt">Produkt</a></li>
                 <li><a href="Om Oss">Om Oss</a></li>
                 <li><a href="Kontakter">Kontakter</a></li>
             </ul>
-        <div class="toggle_btn">
-            <i class="fa-solid fa-bars"></i>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
-    </div>
 
- <!-- Lägger till dropdown menu -->
-    <div class="dropdown_menu">
-        <li><a href="Hem">Produkt</a></li>
-        <li><a href="Produkt">Produkt</a></li>
-        <li><a href="Om Oss">Om Oss</a></li>
-        <li><a href="Kontakter">Kontakter</a></li>
-    </div>
-
+        <!-- själva dropdown menu som hoppar ner endast när skämen är mindere -->
+        <div class="dropdown_menu">
+            <li><a href="Hem">Produkt</a></li>
+            <li><a href="Produkt">Produkt</a></li>
+            <li><a href="Om Oss">Om Oss</a></li>
+            <li><a href="Kontakter">Kontakter</a></li>
+        </div>
 </header>
-
 
 <!-- Har skapar jag fyra boxar som har olika text och kommer ligga på start(hem) sida-->
 <div class="container">
-    <div class="box">
-        <div class="content">
-            <p>Vi är val för dig som behöver automatiska dörrar. Oavsett var du är i landet.</p>
-            <p>Stort utbud av produkter gör att du kan välja exakt de du behöver.</p>
+    <div class="left-column">
+        <div class="image-container">
+            <img src="../D-rr-System/img/1.jpg" alt="Image 1" class="image">
+            <img src="../D-rr-System/img/2.jpeg" alt="Image 2" class="image">
+            <img src="../D-rr-System/img/1.jpg" alt="Image 3" class="image">
+            <img src="../D-rr-System/img/1.jpg" alt="Image 4" class="image">
         </div>
-        <img src="../D-rr-System/img/1.jpg" alt="Image 1">
     </div>
 
-<div class="container">
-    <div class="box">
-        <div class="content">
-            <p>I stora utbudet av produkter hittar du fyra olika sorts av automatisk dörr system.</p>
-            <p>Slagdörr, Skjutdörr, Vikdörr, Karuseldörr.</p>
-            <p>Osäker vilka ska du välja? Vi har experter som kan hjälpa dig.</p>
-        </div>
-        <img src="../D-rr-System/img/2.jpeg" alt="Image 1">
+    <div class="right-column">
+        <div class="static-point" onclick="showImage(0)">I-I Vi är val för dig som behöver automatiska dörrar. Oavsett var du är i landet. Stort utbud av produkter gör att du kan välja exakt de du behöver.</div>
+        <div class="static-point" onclick="showImage(1)">I-I I stora utbudet av produkter hittar du fyra olika sorts av automatisk dörr system. Slagdörr, Skjutdörr, Vikdörr, Karuseldörr. Osäker vilka ska du välja? Vi har experter som kan hjälpa dig.</div>
+        <div class="static-point" onclick="showImage(2)">I-I Text related to Image 3</div>
+        <div class="static-point" onclick="showImage(3)">I-I Text related to Image 4</div>
     </div>
+</div>
 
-    <div class="container">
-        <div class="box">
-            <div class="content">
-                <p>Vi är valet för dig som behöver automatiska dörrar oavsett var du är i landet.</p>
-                <p>Stort utbud av produkter gör att du kan välja exakt de du tycker om.</p>
-            </div>
-            <img src="your-image-url-1.jpg" alt="Image 1">
-        </div>
-
-        <div class="container">
-            <div class="box">
-                <div class="content">
-                    <p>Vi är valet för dig som behöver automatiska dörrar oavsett var du är i landet.</p>
-                    <p>Stort utbud av produkter gör att du kan välja exakt de du tycker om.</p>
-                </div>
-                <img src="your-image-url-1.jpg" alt="Image 1">
-            </div>
-
-<script>
-// Har är funktion till dropdown menu. Så när jag trycker på tre streck den byts till "X" och om skärmen är liten den kan släppa ut allt det man såg på navigations fällt.  
-    const toggleBtn = document.querySelector('.toggle_btn')
-    const toggleBtnIcon = document.querySelector('.toggle_btn i')
-    const dropDownMenu = document.querySelector('.dropdown_menu')
-
-    toggleBtn.onclick = function () {
-        dropDownMenu.classList.toggle('open')
-        const isOpen = dropDownMenu.classList.contains('open')
-
-        toggleBtnIcon.classList = isOpen
-        ? 'fa-solid fa-xmark'
-        : 'fa-solid fa-bars'
-    }
-</script>
+<script src="../D-rr-System/function.js"></script>
  
 </body>
 </html>
