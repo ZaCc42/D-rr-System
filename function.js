@@ -12,9 +12,5 @@ toggleBtn.onclick = function () {
     : 'fa-solid fa-bars'
 }
 
-function showImage(index) {
-    const imageContainer = document.querySelector('.image-container');
-    const imageWidth = document.querySelector('.image').width;
+// Funktion till bilder 
 
-    imageContainer.style.transform = `translateX(-${index * imageWidth}px)`;
-}
