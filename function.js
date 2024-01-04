@@ -12,5 +12,16 @@ toggleBtn.onclick = function () {
     : 'fa-solid fa-bars'
 }
 
-// Funktion till bilder 
-
+// andra del av funktion till navigation bar. Denna gör att efter vi har gått över H1 så blir navigations bar helt enkeld statiskt och står i samma position på toppen av skärm.  
+document.addEventListener("DOMContentLoaded", function() { //Dena rade dubbel kollar att alla filer är laddade och funktion kan köras
+    var nav = document.querySelector('.nav');
+    var h1 = document.querySelector('h1');
+    
+    window.addEventListener('scroll', function() {
+        if (window.scrollY >= h1.offsetHeight) {
+            nav.classList.add('fixed');
+        } else {
+            nav.classList.remove('fixed');
+        }
+    });
+});

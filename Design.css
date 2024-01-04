@@ -50,16 +50,15 @@ a{
 }
 
 a:hover {
-    font-weight: bold; /* styling på ord */
+    font-weight: bold; 
 }
 
-.nav{
-    position: relative;
+.nav.fixed {
+    position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    transition: top 0.3s;
+    width: 100%; 
+    z-index: 1000; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .navbar{
