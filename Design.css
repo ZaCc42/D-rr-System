@@ -1,4 +1,4 @@
-/* standard css saker för hela hemmsida */
+/* ---- STANDARD FÖR HEMSIDA ---- */
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +18,7 @@ header {
     padding-right: 0px;
 }
 
-/* Vart ska Titel ligga */
+/* ---- TITEL ---- */
 h1 {
     position: relative;
     z-index: 1;
@@ -38,7 +38,7 @@ h1 {
     height: auto;
 }
 
-/* navigations fält med olika länkar som leder till olika ställer */
+/* ---- NAVIGATIONS FÄLT ---- */
 li {
     list-style: none;
 }
@@ -83,7 +83,7 @@ a:hover {
     display: none;
 }
 
-/* Dropdown menu som kopplas till naviagtions fält */
+/* ---- EXTETERN DROPDOWN MENU FÖR MOBILER OCH MINDRA SKÄRMAR ---- */
 .dropdown_menu {
     display: none;
     position: absolute;
@@ -137,7 +137,7 @@ a:hover {
 
 }
 
-/* Har kommer design för de fyra olika boxar */
+/* ---- FYRA SEKTIONER ---- */
 .container {
     height: 100vh;
     scroll-snap-type: y proximity;
@@ -156,10 +156,10 @@ section {
     transform-origin: center center;
 }
 
-/*Under dena så bägrensar jag bilder med storlek och ett radius runt kanter samt lägger animation till de */
+/*Under denna så bägrensar jag bilder med storlek och ett radius runt kanter samt lägger animation till de */
 section img {
     max-width: 50%;
-    height: auto;
+    height: 70%;
     border-radius: 10px;
     margin-right: 20px;
 }
@@ -167,7 +167,7 @@ section img {
 @media (prefers-reduced-motion: no-preference) {
 section img {
     max-width: 50%;
-    height: auto;
+    height: 70%;
     border-radius: 10px;
     margin-right: 20px;
     scale: .8; opacity: 0;
@@ -180,7 +180,6 @@ section img {
     to {scale: 1; opacity: 1;}
 }
 }
-
 
 .text-content {
     flex-grow: 1;
@@ -210,3 +209,38 @@ section img {
     }
 }
 
+/* ---- FOTTER ---- */
+footer {
+    height: 200px;
+    background-color: #333; 
+    color: white; 
+    padding: 80px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white; 
+}
