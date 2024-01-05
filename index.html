@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+      
+    <meta charset="UTF-8"> <!-- Här hittar vi olika meta kodar som används för; typ av kodning, att webbsidan kan ändra width & hight utan att det ändras mycket. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" meta/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="Design.css"> <!-- Nästa hittar vi länk till: stayling kod, ikoner som används på olika ställer, hemsidans ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../D-rr-System/img/download.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../D-rr-System/img/download.png" type="image/x-icon">
+    <title>Automatisk Dörrsystem</title>  <!-- Browsers window titel -->
+</head>
+
+<body>
+
+    <header>
+    <!-- Titel i form a bild -->
+    <h1>
+    <img class="title" src="../D-rr-System/img/AUTOMATISKA_DÖRR-removebg-preview.png" alt="Image 1">
+    </h1>
+
+    <!-- Navigerings fält och knappen som visas upp vid använd av mindre skärmar -->
+    <div class="nav">
+        <div class="navbar"> 
+            <ul class="links">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="pages/produkt.html">Produkt</a></li>
+                <li><a href="pages/Om Oss.html">Om Oss</a></li>
+                <li><a href="pages/Kontakter.html">Kontakter</a></li>
+            </ul>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <!-- Dropdown menu som hoppar ner endast när skämen är mindere än viss gärns -->
+        <div class="dropdown_menu">
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="pages/produkt.html">Produkt</a></li>
+            <li><a href="pages/Om Oss.html">Om Oss</a></li>
+            <li><a href="pages/Kontakter.html">Kontakter</a></li>
+        </div>
+    </div>
+</header>
+
+<!-- Fyra boxar som representerar min arbete med olika text. Den ligga på start(hem) sida-->
+<div class="container">
+
+    <section>
+        <img src="../D-rr-System/img/1.jpg" alt="Image 1"> <!-- Representation i bild form -->
+        <div class="text-content">
+            <h3>Vi finns för dig</h3> <!-- Titel -->
+            <p>Vi är val för dig som behöver automatiska dörrar. Oavsett var du är i landet. Utbud av produkter på vår hemsida gör att du kan välja exakt de du behöver.</p> <!-- Vad det handlar om -->
+        </div>
+    </section>
+
+    <section>
+        <img src="../D-rr-System/img/2.jpg" alt="Image 2">
+        <div class="text-content">
+            <h3>Vad behöver du?</h3>
+            <p>I utbudet av produkter hittar du fyra olika sorts av automatisk dörr system. Slagdörr, Skjutdörr, Vikdörr, Karuseldörr.</p>
+        </div>
+    </section>
+
+    <section>
+        <img src="../D-rr-System/img/3.png" alt="Image 3">
+        <div class="text-content">
+            <h3>Behöver du leverans?</h3>
+            <p>Har du problem med leverans. Vi kan även hjälap med det.</p>
+        </div>
+    </section>
+
+    <section>
+        <img src="../D-rr-System/img/4.png" alt="Image 4">
+        <div class="text-content">
+            <h3>Vilka ska du välj?</h3>
+            <p>Osäker vilka ska du välja. Kom till en av våra kontor, se på saker i verklighet och få respons av våra experter.</p>
+        </div>
+    </section>
+
+</div>
+
+<!-- Footer alltså det som står på slutet av hemsida. Har hittar kund: några direkt länkar, kontakter och vem tillhör hemsidan -->
+<footer>
+    
+    <div class="footer-content"> <!-- Det hela footer -->
+        <ul class="footer-links"> <!-- Länkar som är direkt kopplade till andra delar av hemsida och snabb kontakt -->
+            <li><a href="Om Oss">Om Oss</a></li>
+            <li><a href="Kontakter">Kontakter & Kontor</a></li>
+            <p>Kontakta oss: +46 73 570 2667</p> 
+        </ul>
+        <div class="rights"> <!-- vem tillhör webbsidan -->
+            <p>Innehållet på denna webbplats är upphovsrättsskyddat och tillhör</p>
+            <p>Automatisk Dörrsystem AB</p>
+            <p>&copy; 2023</p>
+            <img class="footer-logo" src="../D-rr-System/img/AUTOMATISKA_DÖRR-removebg-preview.png" alt="Image 1">
+        </div>    
+    </div>
+
+</footer>
+
+<!-- Koppling till java scrip kod så slipper vi ha onördig kod i HTML kod -->
+<script src="../D-rr-System/function.js"></script>
+ 
+</body>
+</html>
