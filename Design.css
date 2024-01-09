@@ -1,4 +1,4 @@
-/* ---- STANDARD FÖR HEMSIDA ---- */
+                                                        /* ---- STANDARD FÖR HEMSIDA ---- */
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +15,7 @@ body {
     flex-direction: column;
 }
 
-/* ---- TITEL ---- */
+                                                        /* ---- TITEL ---- */
 h1 {
     position: relative;
     z-index: 1;
@@ -36,7 +36,7 @@ h1 {
     max-height: 100px;
 }
 
-/* ---- NAVIGATIONS FÄLT ---- */
+                                                        /* ---- NAVIGATIONS FÄLT ---- */
 li {
     list-style: none;
 }
@@ -83,7 +83,7 @@ li {
     display: none;
 }
 
-/* ---- EXTETERN DROPDOWN MENU FÖR MOBILER OCH MINDRA SKÄRMAR ---- */
+                                                        /* ---- EXTETERN DROPDOWN MENU FÖR MOBILER OCH MINDRA SKÄRMAR ---- */
 .dropdown_menu {
     display: none;
     position: absolute;
@@ -147,12 +147,12 @@ li {
     }
 }
 
-/* ---- FYRA SEKTIONER ---- */
+                                                        /* ---- FYRA SEKTIONER ---- */
 .container-hem{
     padding: 5%;
 }
 
-section {
+.Hem-sekction {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -185,7 +185,7 @@ section .text-content h3{
 }
 
 /*under denna så bägrensar jag bilder med storlek och radius runt kanter samt lägger animation till de*/
-section img {             
+.Hem-sekction img {             
     max-width: 50%;
     height: auto;
     border-radius: 10px;
@@ -228,7 +228,7 @@ section img {
     }
 }
 
-/* ---- FOTTER ---- */
+                                                        /* ---- FOTTER ---- */
 footer {
     margin-top: auto;
     height: 250px;
@@ -331,4 +331,26 @@ footer {
     text-align: left;
     margin-bottom: 20px;
   }
+}
+
+                                                        /* PRODUKTER HEM */
+.produkt-dörrar{
+    padding: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.produkt-undertext{
+    padding: 10%;
+}
+
+#video1 {
+    display: none; /* Hide the video initially */
+    width: 100%;
+    height: auto;
+}
+
+.video-container:hover #video1 {
+    touch-action:auto;
 }
