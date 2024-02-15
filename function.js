@@ -26,3 +26,30 @@ document.addEventListener("DOMContentLoaded", function() { //Dena rade dubbel ko
     });
 });
 
+// Det tredje del av JS som ger en funktion till Dörr-kontent av att man ska kunna bledra genom
+let currentIndex = 0;
+const items = document.querySelectorAll('.Dörr-artikel');
+
+function showSlide(index) {
+    items.forEach((item, i) => {
+        item.style.display = i === index ? 'flex' : 'none';
+    });
+}
+
+function nextSlide() {
+    currentIndex = (currentIndex + 1) % items.length;
+    showSlide(currentIndex);
+}
+
+function prevSlide() {
+    currentIndex = (currentIndex - 1 + items.length) % items.length;
+    showSlide(currentIndex);
+}
+
+// Show the first slide on page load
+document.addEventListener('DOMContentLoaded', () => {
+    showSlide(currentIndex);
+});
+
+// Optionally, you can add automatic slideshow
+// setInterval(nextSlide, 5000); // Change slide every 5 seconds

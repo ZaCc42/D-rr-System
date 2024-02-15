@@ -2,7 +2,7 @@
 
 <html lang="en">
 <head>
-      
+
     <meta charset="UTF-8"> <!-- Här hittar vi olika meta kodar som används för; typ av kodning, att webbsidan kan ändra width & hight utan att det ändras mycket. -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" meta/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,12 +15,10 @@
 
 <body>
 
-    <h1>Karuseldörr</h1>
-
-    <header>
+    <header class="Navigering">
     <!-- Navigerings fält och knappen som visas upp vid använd av mindre skärmar -->
     <div class="nav">
-        <div class="navbar"> 
+        <div class="navbar">
             <ul class="links">
                 <li><a href="../index.html">Hem</a></li>
                 <li><a href="../pages/produkt.html">Produkt</a></li>
@@ -42,9 +40,84 @@
     </div>
 </header>
 
+<!-- Det första som visas när vi öppnar detta produkt -->
+<div class="Dörr-intro">
+
+    <section>                      <!-- Sektion med text som leder in om produkt -->    
+        <div class="text">
+            <h3>Karuseldörr</h3>
+            <p>De mest effektiva dörrsystem för stor flöde av kunder.
+            Erbjude ett stilig design för byggnade som behöver mer av style.
+            Samt är bra isolerade. Det gör att värme och energiförlust är inte stor problem. </p>
+        </div>
+        <div class="bild">        <!-- En animerad bild på produkt de ska kolla på -->
+            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.42/build/spline-viewer.js"></script>
+            <spline-viewer url="https://prod.spline.design/2ZPswqryqC59jBd9/scene.splinecode"></spline-viewer>
+        </div>
+    </section>
+
+    <!-- Under kommer fyra containers som talar om specifikt just för varje typ av produkt de är i -->
+    <section>
+    <button onclick="prevSlide()">←</button>                                    <!-- Button i som går bak. Kopplas till JS och har funktion att flytta mellan de container -->
+
+        <div id="Dörr-kontent">                                             <!-- Ny container -->   
+            <div class="Dörr-artikel" id="item1">  
+                <img src="../img/karusel dörr@1-1280x569.jpg" alt="Image 1">    <!-- Bild -->
+                <div>
+                    <h3>Klassisak Små</h3>                                     <!-- Text -->
+                    <p> - Små och eleganta </p>
+                    <p> - Design som aldrig blir gammal</p>
+                    <p> - Hög tillverknings kvalitet</p>
+                    <p> - Passar perfekt till diskreta och ärliga designer</p>
+
+                </div>
+            </div>
+
+            <div class="Dörr-artikel" id="item2">
+                <img src="../img/karusel dörr@1-1280x569.jpg" alt="Image 2">
+                <div>
+                    <h3>Klassisak Stora</h3>
+                    <p> - Starkare mittpanell </p>
+                    <p> - Panenl är gjord av stål</p>
+                    <p> - Pelaren har utbrytningssystem </p>
+                    <p> - Perfekt till behöv av störe dörrdiameter</p>
+                    <p> - Designen passar fint till större objekter</p>
+                </div>
+            </div>
+
+            <div class="Dörr-artikel" id="item3">
+                <img src="../img/karusel dörr@1-1280x569.jpg" alt="Image 3">
+                <div>
+                    <h3>Lätt ram</h3>
+                    <p> - Elegant design </p>
+                    <p> - Stabilt uppbygdd</p>
+                    <p> - Gjord av aluminium som tillåter tunn desing </p>
+                    <p> - Dörr med smal tunn aluminium ram och utan mittpanell</p>
+                    <p> - En sista elegant detaljer ger oss glass taket</p>
+                </div>
+            </div>
+
+            <div class="Dörr-artikel" id="item4">
+                <img src="../img/karusel dörr@1-1280x569.jpg" alt="Image 4">
+                <div>
+                    <h3>Full Glass</h3>
+                    <p> - Extra eleganta </p>
+                    <p> - Dörr kanter gjorda av tunn kromstål</p>
+                    <p> - Glass taket följer med</p>
+                    <p> - Utan mittpanell</p>
+                </div>
+            </div>
+
+        </div>
+
+    <button onclick="nextSlide()" class="a">→</button>     <!-- Button i som går Fram. Kopplas till JS och har funktion att flytta mellan de container -->
+    </section>
+
+</div>
+
 
 <!-- Koppling till java scrip kod så slipper vi ha onördig kod i HTML kod -->
 <script src="../function.js"></script>
- 
+
 </body>
 </html>
