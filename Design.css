@@ -332,10 +332,14 @@ footer {
 @media(max-width:768px) {
   .footer-links{
     width: 100%;
-    text-align: left;
-    margin-bottom: 20px;
   }
 }
+
+@media(max-width:380px) {
+    .footer-links{
+      width: 120%;
+    }
+  }
 
                                                         /* PRODUKTER HEM */
 .produkt-dörrar{
@@ -464,10 +468,8 @@ footer {
 
 button {
     margin-top: 15%;
-    width:70px;
-    height:70px;
-    border: 1px solid #afa2a2;
-    border-radius: 50%;
+    width:50px;
+    height:50px;
     color:#afa2a2;
     text-align:center;
     background: #585757;
@@ -475,26 +477,21 @@ button {
     font-weight:bold;
 }
 
+.help{
+   display: none; 
+}
+
+
 @media(max-width: 968px){
-    #Dörr-kontent {
-        height:fit-content;
-    }
-    
     .Dörr-artikel{
         flex-direction: column;
     }
 
     button{
-
-        width: 50px;
-        height: 50px;
+        display: none;
     }
 
-    .Dörr-artikel h3 {
-    margin-top: 0%;
-    } 
-
-    button {
-        margin: 0px;
-    }
+    .help{
+        display: block; 
+     }
 }

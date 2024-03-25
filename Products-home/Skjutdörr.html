@@ -2,7 +2,7 @@
 
 <html lang="en">
 <head>
-      
+
     <meta charset="UTF-8"> <!-- Här hittar vi olika meta kodar som används för; typ av kodning, att webbsidan kan ändra width & hight utan att det ändras mycket. -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" meta/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,12 +15,10 @@
 
 <body>
 
-    <h1>Skjutdörr</h1>
-
-    <header>
+    <header class="Navigering">
     <!-- Navigerings fält och knappen som visas upp vid använd av mindre skärmar -->
     <div class="nav">
-        <div class="navbar"> 
+        <div class="navbar">
             <ul class="links">
                 <li><a href="../index.html">Hem</a></li>
                 <li><a href="../pages/produkt.html">Produkt</a></li>
@@ -42,9 +40,103 @@
     </div>
 </header>
 
+<!-- Det första som visas när vi öppnar detta produkt -->
+<div class="Dörr-intro">
+
+    <section>                      <!-- Sektion med text som leder in om produkt -->    
+        <div class="text">
+            <h3>Skjutdörr</h3>
+            <p> I det stora sortimant av dörrar hittar du blandaannat skjutdörr. 
+                Det simplaste dörr systemet som kan erbjudas. Veldigt funktionälla och kan synas i störra 
+                afärrer men även i simla och eleganta rum. 
+                Vill du ha något elegant och effektift detta är ditt val. </p>
+        </div>
+        <div class="bild">        <!-- En animerad bild på produkt de ska kolla på -->
+            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.38/build/spline-viewer.js"></script>
+            <spline-viewer url="https://prod.spline.design/ATdilSabFY51cPyF/scene.splinecode"></spline-viewer>
+        </div>
+    </section>
+
+    <!-- Under kommer fyra containers som talar om specifikt just för varje typ av produkt de är i -->
+    <section>
+    <button onclick="prevSlide()">←</button>                                    <!-- Button i som går bak. Kopplas till JS och har funktion att flytta mellan de container -->
+
+        <div id="Dörr-kontent">                                             <!-- Ny container -->   
+            <div class="Dörr-artikel" id="item1">  
+                <img src="../img/karusel dörr@1-1280x569.jpg" alt="Image 1">    <!-- Bild -->
+                <div>
+                    <h3>Enkla Linjär</h3>                                     <!-- Text -->
+                    <p> - Passar fint till platser med tillräcklig sido plats </p>
+                    <p> - Elegant design</p>
+                    <p> - Detta skjut systemet bidrar till säkerhet av kunder</p>
+
+                    <h5> VID INTRESSE AV ALLA EXTRA FUNKTIONER OCH UTSENDE KONTAKTA OSS<h5>
+
+                </div>
+            </div>
+
+            <div class="Dörr-artikel" id="item2">
+                <img src="../img/karusel dörr@1-1280x569.jpg" alt="Image 2">
+                <div>
+                    <h3>Teleskop</h3>                                     <!-- Text -->
+                    <p> - Passar till objekt där stor öppningsbredd krevs </p>
+                    <p> - Öppnar stor yta på små mått</p>
+                    <p> - Samt estetisk passar till de flesta bygnnader</p>
+
+                    <h5> VID INTRESSE AV ALLA EXTRA FUNKTIONER OCH UTSENDE KONTAKTA OSS<h5>
+
+                </div>
+            </div>
+
+            <div class="Dörr-artikel" id="item3">
+                <img src="../img/karusel dörr@1-1280x569.jpg" alt="Image 3">
+                <div>
+                    <h3>Rundade</h3>                                     <!-- Text -->
+                    <p> - Ett unikt system till din objekt </p>
+                    <p> - Jämfort met Linjera dörr dessa öppnas 40% mer</p>
+                    <h5> VID INTRESSE AV ALLA EXTRA FUNKTIONER OCH UTSENDE KONTAKTA OSS<h5>
+
+                </div>
+            </div>
+
+            <div class="Dörr-artikel" id="item4">
+                <img src="../img/karusel dörr@1-1280x569.jpg" alt="Image 4">
+                <div>
+                    <h3>Enkla Linjär</h3>                                     <!-- Text -->
+                    <p> - Passar fint till platser med tillräcklig sido plats </p>
+                    <p> - Elegant design</p>
+                    <p> - Detta skjut systemet bidrar till säkerhet av kunder</p>
+                    <h5> VID INTRESSE AV ALLA EXTRA FUNKTIONER OCH UTSENDE KONTAKTA OSS<h5>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="help"> <p>← Skrolla för att se nästa →</p> </div>
+
+    <button onclick="nextSlide()" class="a">→</button>     <!-- Button i som går Fram. Kopplas till JS och har funktion att flytta mellan de container -->
+    </section>
+</div>
+
+<!-- Footer alltså det som står på slutet av hemsida. Har hittar kund: några direkt länkar, kontakter och vem tillhör hemsidan -->
+<footer>
+    <div class="footer-content"> <!-- Det hela footer -->
+        <ul class="footer-links"> <!-- Länkar som är direkt kopplade till andra delar av hemsida och snabb kontakt -->
+            <li><a href="pages/Om Oss.html">Om Oss</a></li>
+            <li><a href="pages/Kontakter.html">Kontakter & Kontor</a></li>
+            <p>Kontakta oss: +46 73 570 2667</p> 
+        </ul>
+        <div class="rights"> <!-- vem tillhör webbsidan -->
+            <p>Innehållet på denna webbplats är upphovsrättsskyddat och tillhör</p>
+            <p>Automatisk Dörrsystem AB</p>
+            <p>&copy; 2023</p>
+            <img class="footer-logo" src="../D-rr-System/img/AUTOMATISKA_DÖRR-removebg-preview.png" alt="Image 1">
+        </div>     
+    </div>
+</footer>
 
 <!-- Koppling till java scrip kod så slipper vi ha onördig kod i HTML kod -->
 <script src="../function.js"></script>
- 
+
 </body>
 </html>

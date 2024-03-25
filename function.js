@@ -29,6 +29,8 @@ document.addEventListener("DOMContentLoaded", function() { //Dena rade dubbel ko
 // Det tredje del av JS som ger en funktion till Dörr-kontent av att man ska kunna bledra genom
 let currentIndex = 0;
 const items = document.querySelectorAll('.Dörr-artikel');
+let touchStartX = 0;
+let touchEndX = 0;
 
 function showSlide(index) {
     items.forEach((item, i) => {
@@ -46,10 +48,32 @@ function prevSlide() {
     showSlide(currentIndex);
 }
 
+// Touch event handling
+function handleTouchStart(event) {
+    touchStartX = event.touches[0].clientX;
+}
+
+function handleTouchEnd(event) {
+    touchEndX = event.changedTouches[0].clientX;
+
+    // Calculate swipe direction
+    const swipeDistance = touchEndX - touchStartX;
+
+    // Adjust the threshold based on your preference
+    const swipeThreshold = 50;
+
+    if (swipeDistance > swipeThreshold) {
+        prevSlide();
+    } else if (swipeDistance < -swipeThreshold) {
+        nextSlide();
+    }
+}
+
+// Attach touch event listeners
+document.addEventListener('touchstart', handleTouchStart, false);
+document.addEventListener('touchend', handleTouchEnd, false);
+
 // Show the first slide on page load
 document.addEventListener('DOMContentLoaded', () => {
     showSlide(currentIndex);
 });
-
-// Optionally, you can add automatic slideshow
-// setInterval(nextSlide, 5000); // Change slide every 5 seconds
