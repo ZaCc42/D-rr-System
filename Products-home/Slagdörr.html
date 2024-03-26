@@ -15,8 +15,6 @@
 
 <body>
 
-    <h1>Slagdörr</h1>
-
     <header>
     <!-- Navigerings fält och knappen som visas upp vid använd av mindre skärmar -->
     <div class="nav">
@@ -42,6 +40,84 @@
     </div>
 </header>
 
+
+<!-- Det första som visas när vi öppnar detta produkt -->
+<div class="Dörr-intro">
+
+    <section>                      <!-- Sektion med text som leder in om produkt -->    
+        <div class="text">
+            <h3>Slagdörr</h3>
+            <p> Något vi alla behöver vardagligen är vanliga dörrar som öppnas åt sidan. I vårt sortiment de är helt automatiserade.
+                De dörrar hittar vi i många byggnade just för deras klasisak design. 
+                Behöver du med ett sådant system i din byggnad så är du på rätt plats.
+                </p>
+        </div>
+        <div class="bild">        <!-- En animerad bild på produkt de ska kolla på -->
+            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.38/build/spline-viewer.js"></script>
+            <spline-viewer url="https://prod.spline.design/zITN3d1hhEnZvkHd/scene.splinecode"></spline-viewer>
+        </div>
+    </section>
+
+    <!-- Under kommer fyra containers som talar om specifikt just för varje typ av produkt de är i -->
+    <section>
+    <button onclick="prevSlide()">←</button>                                    <!-- Button i som går bak. Kopplas till JS och har funktion att flytta mellan de container -->
+
+        <div id="Dörr-kontent">                                             <!-- Ny container -->   
+            <div class="Dörr-artikel" id="item1">  
+                <img src="../img/karusel dörr@1-1280x569.jpg" alt="Image 1">    <!-- Bild -->
+                <div>
+                    <h3>Synliga öppningslösning</h3>                                     <!-- Text -->
+                    <p> - Slagdörr finns som enstack dörr och dubbel dörr </p>
+                    <p> - Det som menas med synlig öppningslösning är att drivboxen kommer synas</p>
+                    <br>
+                    <h4> - Vid montering väljer du mellan:</h4>
+                    <p>  Öppningssätt; öppnas i olika håll eller ett riktining</p>
+                    <p>  System monterings läge; övanför eller på dörr</p>
+                    <p>  Olika arm som öppnar dörr</p>
+                    <br>
+                    <h5> FÖR ALLA EXTRA FUNKTIONER OCH FRÅGOR OM UTSENDE KONTAKTA OSS ELLER BESÖK OSS<h5>
+
+                </div>
+            </div>
+
+            <div class="Dörr-artikel" id="item2">
+                <img src="../img/karusel dörr@1-1280x569.jpg" alt="Image 2">
+                <div>
+                    <h3>Osynliga öppningslösning</h3>                                     <!-- Text -->
+                    <p> - Slagdörr finns som enstack dörr och dubbel dörr </p>
+                    <p> - Det som menas med osynliga öppningslösning är att drivboxen kommer inte synas</p>
+                    <br>
+                    <h4> - Vid montering väljer du mellan:</h4>
+                    <p>  Öppningssätt; öppnas i olika håll eller ett riktining</p>
+                    <p>  System monterings läge; i innertaket, golvet, källartaket eller untan länkram</p>
+                    <br>
+                    <h5> FÖR ALLA EXTRA FUNKTIONER OCH FRÅGOR OM UTSENDE KONTAKTA OSS ELLER BESÖK OSS<h5>
+                    </div>
+            </div>
+        </div>
+
+        <div class="help"> <p>← Skrolla för att se nästa →</p> </div>
+
+    <button onclick="nextSlide()" class="a">→</button>     <!-- Button i som går Fram. Kopplas till JS och har funktion att flytta mellan de container -->
+    </section>
+</div>
+
+<!-- Footer alltså det som står på slutet av hemsida. Har hittar kund: några direkt länkar, kontakter och vem tillhör hemsidan -->
+<footer>
+    <div class="footer-content"> <!-- Det hela footer -->
+        <ul class="footer-links"> <!-- Länkar som är direkt kopplade till andra delar av hemsida och snabb kontakt -->
+            <li><a href="../pages/Om Oss.html">Om Oss</a></li>
+            <li><a href="../pages/Kontakter.html">Kontakter & Kontor</a></li>
+            <p>Kontakta oss: +46 73 570 2667</p> 
+        </ul>
+        <div class="rights"> <!-- vem tillhör webbsidan -->
+            <p>Innehållet på denna webbplats är upphovsrättsskyddat och tillhör</p>
+            <p>Automatisk Dörrsystem AB</p>
+            <p>&copy; 2023</p>
+            <img class="footer-logo" src="../D-rr-System/img/AUTOMATISKA_DÖRR-removebg-preview.png" alt="Image 1">
+        </div>     
+    </div>
+</footer>
 
 <!-- Koppling till java scrip kod så slipper vi ha onördig kod i HTML kod -->
 <script src="../function.js"></script>

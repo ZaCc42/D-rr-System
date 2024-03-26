@@ -15,7 +15,6 @@
 
 <body>
 
-    <h1>Vikdörr</h1>
 
     <header>
     <!-- Navigerings fält och knappen som visas upp vid använd av mindre skärmar -->
@@ -42,6 +41,64 @@
     </div>
 </header>
 
+<!-- Det första som visas när vi öppnar detta produkt -->
+<div class="Dörr-intro">
+
+    <section>                      <!-- Sektion med text som leder in om produkt -->    
+        <div class="text">
+            <h3>Vikdörr</h3>
+            <p> Vill man ha unika dörr system, då borde man tänka på Vikdörr. Ett väldigt unikt system som inte syns vardagligen.
+                De fungerar bäst till mindre objekter som t.ex. mindre butiker, småföretag, bensinstation och så vidare.
+                Vikdörr system är inte bara unik utan också användabar just på grund av den öppnar ett stor yta. 
+                </p>
+        </div>
+        <div class="bild">        <!-- En animerad bild på produkt de ska kolla på -->
+            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.38/build/spline-viewer.js"></script>
+            <spline-viewer url="https://prod.spline.design/NhPw8Csaa2WrDnp2/scene.splinecode"></spline-viewer>
+        </div>
+    </section>
+
+    <!-- Under kommer fyra containers som talar om specifikt just för varje typ av produkt de är i -->
+    <section>
+    <button onclick="prevSlide()">←</button>                                    <!-- Button i som går bak. Kopplas till JS och har funktion att flytta mellan de container -->
+
+        <div id="Dörr-kontent">                                             <!-- Ny container -->   
+            <div class="Dörr-artikel" id="item1">  
+                <img src="../img/karusel dörr@1-1280x569.jpg" alt="Image 1">    <!-- Bild -->
+                <div>
+                    <h3>Vikdörr</h3>                                     <!-- Text -->
+                    <p> - Vikdörr hittar du bara i ett form och ett stil av öppning</p>
+                    <p> - Det som menas med synlig öppningslösning är att drivboxen kommer synas</p>
+                    <p> - Den typen av dörr är förtillverkade komplett av formsköna specialprofiler</p>
+                    <br>
+                    <h5> FÖR ALLA EXTRA FUNKTIONER OCH FRÅGOR OM UTSENDE KONTAKTA OSS ELLER BESÖK OSS<h5>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="help"> <p>← Skrolla för att se nästa →</p> </div>
+
+    <button onclick="nextSlide()" class="a">→</button>     <!-- Button i som går Fram. Kopplas till JS och har funktion att flytta mellan de container -->
+    </section>
+</div>
+
+<!-- Footer alltså det som står på slutet av hemsida. Har hittar kund: några direkt länkar, kontakter och vem tillhör hemsidan -->
+<footer>
+    <div class="footer-content"> <!-- Det hela footer -->
+        <ul class="footer-links"> <!-- Länkar som är direkt kopplade till andra delar av hemsida och snabb kontakt -->
+            <li><a href="../pages/Om Oss.html">Om Oss</a></li>
+            <li><a href="../pages/Kontakter.html">Kontakter & Kontor</a></li>
+            <p>Kontakta oss: +46 73 570 2667</p> 
+        </ul>
+        <div class="rights"> <!-- vem tillhör webbsidan -->
+            <p>Innehållet på denna webbplats är upphovsrättsskyddat och tillhör</p>
+            <p>Automatisk Dörrsystem AB</p>
+            <p>&copy; 2023</p>
+            <img class="footer-logo" src="../D-rr-System/img/AUTOMATISKA_DÖRR-removebg-preview.png" alt="Image 1">
+        </div>     
+    </div>
+</footer>
 
 <!-- Koppling till java scrip kod så slipper vi ha onördig kod i HTML kod -->
 <script src="../function.js"></script>

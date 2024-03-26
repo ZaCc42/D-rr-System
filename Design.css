@@ -420,6 +420,7 @@ footer {
 
 .Dörr-intro .bild{
     margin-left: 20%;
+    width: 100%;
 }
 
 .Dörr-intro::-webkit-scrollbar { 
